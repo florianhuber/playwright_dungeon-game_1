@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("test", async ({ page }) => {
+test("simple test, generated with codegen", async ({ page }) => {
   await page.goto("http://localhost:3000/");
   await expect(page.getByRole("heading")).toContainText(
     "Welcome to the Dungeon!"
